@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Bootstrap Navbar Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Coding Yaar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Nos avantages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Patient</a></li>
+                                <li><a class="dropdown-item" href="#">Medecin</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nous contacter</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-dark fw-bold" type="submit">S'inscrire</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+  <!-- Section un meilleur suivi -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Agir pour un meilleur suivi !</h1>
+            <p class="my-4">L'application qui met en relation des professionnels de santé pour se pencher sur des cas complexes.</p>
+            <button class="btn btn-primary">En savoir plus</button>
+          </div>
+          <div class="col-lg-6">
+            <img src="./assets/Rectangle 51.png" class="img-fluid" alt="Docteur souriant">
+          </div>
+        </div>
+      </section>
+
+
+ <!-- Section patient/medecin -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card" id="medecin">
+                <div class="card-body">
+                  <h2 class="card-title" id="medecin-patient">Médecin</h2>
+                  <p class="card-text">Découvrez les différents avantages que nous proposons pour les médecins.</p>
+                  <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card"  id="patient">
+                <div class="card-body">
+                  <h2 class="card-title" id="medecin-patient">Patient</h2>
+                  <p class="card-text">Découvrez les différents avantages que nous proposons pour les patients.</p>
+                  <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <!-- Bootstrap 5 JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
