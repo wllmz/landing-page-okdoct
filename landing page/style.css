@@ -1,0 +1,38 @@
+body{
+    background-color: #EBF8FF;
+    color: #1F3561;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #1F3561;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card#patient {
+    height: 450px;
+    background-image: url('./assets/Patient.png');
+    background-size: cover;
+    background-position: center; /* Centrer l'image dans la div */
+    background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+}
+
+.card#medecin {
+    height: 450px;
+    background-image: url('./assets/medecin.png');
+    background-size: cover;
+    background-position: center; /* Centrer l'image dans la div */
+    background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+}
+
+.card{
+    background-color: #ebf8ff;
+    border: none;
+    color: white;
+    border-radius: 16px;
+}
+
+h2.card-title#medecin-patient {
+    margin-top: 50%;
+}
