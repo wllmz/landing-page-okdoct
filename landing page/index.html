@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/utendo" rel="stylesheet">
 
 </head>
 
@@ -16,7 +20,7 @@
     <section class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">Coding Yaar</a>
+              <a href="index.html"><img src="./assets/logo-okdoct.png" class="img-fluid" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,15 +31,15 @@
                                 Nos avantages
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Patient</a></li>
-                                <li><a class="dropdown-item" href="#">Medecin</a></li>
+                                <li><a class="dropdown-item" href="patient.html">Patient</a></li>
+                                <li><a class="dropdown-item" href="medecin.html">Medecin</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nous contacter</a>
+                            <a class="nav-link" href="contact.html">Nous contacter</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-dark fw-bold" type="submit">S'inscrire</button>
+                    <button class="btn btn-outline-dark fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#inscriptionModal">S'inscrire</button>
                 </div>
             </div>
         </nav>
@@ -49,10 +53,10 @@
           <div class="col-lg-6">
             <h1>Agir pour un meilleur suivi !</h1>
             <p class="my-4">L'application qui met en relation des professionnels de santé pour se pencher sur des cas complexes.</p>
-            <button class="btn btn-primary">En savoir plus</button>
+            <button class="btn btn-primary" id="royal">En savoir plus</button>
           </div>
           <div class="col-lg-6">
-            <img src="./assets/Rectangle 51.png" class="img-fluid" alt="Docteur souriant">
+            <img src="./assets/Rectangle 51.png" class="img-fluid" alt="">
           </div>
         </div>
         </div>
@@ -68,7 +72,7 @@
                 <div class="card-body">
                   <h2 class="card-title" id="medecin-patient">Médecin</h2>
                   <p class="card-text">Découvrez les différents avantages que nous proposons pour les médecins.</p>
-                  <a href="#" class="btn btn-primary">En savoir plus</a>
+                  <a href="#" class="btn btn-primary" id="blanc">En savoir plus</a>
                 </div>
               </div>
             </div>
@@ -77,7 +81,7 @@
                 <div class="card-body">
                   <h2 class="card-title" id="medecin-patient">Patient</h2>
                   <p class="card-text">Découvrez les différents avantages que nous proposons pour les patients.</p>
-                  <a href="#" class="btn btn-primary">En savoir plus</a>
+                  <a href="#" class="btn btn-primary" id="blanc">En savoir plus</a>
                 </div>
               </div>
             </div>
@@ -181,7 +185,105 @@
       </div>
     </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="inscriptionModal" tabindex="-1" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="inscriptionModalLabel">Vous êtes :</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#patientform">Patient</button>
+        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#medecinform">Médecin</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal Patient -->
+ <div class="modal fade" id="patientform" tabindex="-1" aria-labelledby="patientformLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="patientformLabel">Formulaire Patient</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Contenu du formulaire patient ici -->
+              <form class="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="ville" placeholder="Ville d'habitation">
+                </div>
+                <button type="button" class="btn btn-primary btn-block" id="form-pre" onclick="goBackToInscriptionModal('patientform')">Précedent</button>
+                <button type="submit" class="btn btn-primary btn-block" id="form-send">Envoyer</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal Médecin -->
+<div class="modal fade" id="medecinform" tabindex="-1" aria-labelledby="medecinformLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="medecinformLabel">Formulaire Médecin</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+              <!-- Contenu du formulaire médecin ici -->
+              <form class="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="ville" placeholder="Ville d'habitation">
+                </div>
+      
+                <button type="button" class="btn btn-primary btn-block" id="form-pre" onclick="goBackToInscriptionModal('medecinform')">Précedent</button>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-send">Envoyer</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
     <!-- Bootstrap 5 JS bundle -->
+
+    <script>
+      // Cette fonction ferme le modal actuel et ouvre le modal d'inscription
+      function goBackToInscriptionModal(currentModalId) {
+        // Ferme le modal actuel (soit patientform soit medecinform)
+        var currentModal = bootstrap.Modal.getInstance(document.getElementById(currentModalId));
+        currentModal.hide();
+        
+        // Ouvre le modal d'inscription
+        var inscriptionModal = new bootstrap.Modal(document.getElementById('inscriptionModal'));
+        inscriptionModal.show();
+      }
+    </script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
