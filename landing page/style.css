@@ -1,7 +1,12 @@
 body{
     background-color: #EBF8FF;
     color: #1F3561;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: 'Utendo', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, li,.btn {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
 }
 
 .nav-link {
@@ -118,4 +123,131 @@ section#patient-medecin {
 div#footer-card {
     margin-top: 100px;
 
+}
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+span#titre-h1{
+  padding: 10px;
+  background-color: #1F3561;
+  color: white;
+  border-radius: 5px;
+}
+
+section.header {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.contact-form {
+  padding: 40px;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  box-shadow: none; /* Si vous ne voulez pas d'ombre sur le bouton */
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+.form-control::placeholder { /* Change la couleur du placeholder */
+  color: #999999;
+}
+.form-control {
+  color: #000;
+  background-color: #EBF8FF !important;
+  outline: 0;
+  border: 1px solid #ebf8ff;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 20px;
+}
+
+
+button#contact {
+  margin-top: 15%;
+}
+
+div#contact {
+  padding-bottom: 20%;
+}
+
+.modal-content {
+  border-radius: 15px;
+  padding-bottom: 50px;
+}
+.modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal-title {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  font-weight: 500;
+}
+.btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.modal-body {
+  text-align: center;
+}
+.modal-body .btn {
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  width: 150px; /* Largeur fixe pour les deux boutons */
+  height: 100px;
+  margin: 15px 20px; /* Espacement entre les boutons */
+}
+
+h3#inscriptionModalLabel {
+  padding-top: 30px;
+}
+
+button#form-send, button#form-pre{
+  padding: 5px;
+  height: 40px;
+}
+button#form-send{
+ background-color: #3A57ED !important;
+ border-color: #3A57ED;
+ font-weight: bold;
+}
+
+button#form-pre{
+background-color: white;
+color: #1F3561;
+font-weight: bold;
+border-color: #ededed;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+button#royal {
+  background-color: #3A57ED !important;
+  border-radius: 15px;
+  border: none !important;
+}
+
+.btn {
+  padding: 10px 30px 10px 30px !important;
+  border-radius: 15px;
+}
+
+a#blanc {
+  background-color: white;
+  border: none;
+  color: #1F3561;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 100%);
+}
+
+a#en-savoir {
+  background-color: #00DEDD;
+  border: none;
+  color: #1F3561;
+  box-shadow: 0 5px 10px rgb(168, 168, 168);
 }
