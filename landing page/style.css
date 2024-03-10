@@ -329,7 +329,6 @@ section.section-bck-top{
   background-image: url('./assets/background/Mode_Isolation.png');
   background-position: top left; /* Centrer l'image dans la div */
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 div#contact {
@@ -364,13 +363,13 @@ div#contact {
 }
 
 @keyframes patient {
-  from { margin-left: 60%; opacity: 0; }
+  from { margin-left: 80%; opacity: 0; }
   to { margin-left: 0; opacity: 1; }
 }
 
 /* Animation medecin */
 @keyframes medecin {
-  from { margin-right: 60%; opacity: 0; }
+  from { margin-right: 80%; opacity: 0; }
   to { margin-right: 0; opacity: 1; }
 }
 
@@ -383,26 +382,38 @@ div#contact {
   animation: medecin 2s forwards;
 }
 
-
-#anim-1, #anim-2, #anim-3 {
+.anim-left, .anim-right {
   opacity: 0;
+  transition: opacity 2s ease-out;
 }
 
-@keyframes animationVersDroite {
-  from { margin-left: 50%; opacity: 0; }
-  to { margin-left: 0; opacity: 1; }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-@keyframes animationVersGauche {
-  from { margin-right: 50%; opacity: 0; }
-  to { margin-right: 0; opacity: 1; }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-/* Classes pour déclencher les animations */
-.animate-vers-droite {
-  animation: animationVersDroite 2s forwards;
+.animate-left {
+  animation: slideInFromLeft 2s forwards;
 }
 
-.animate-vers-gauche {
-  animation: animationVersGauche 2s forwards;
+.animate-right {
+  animation: slideInFromRight 2s forwards;
 }
+
