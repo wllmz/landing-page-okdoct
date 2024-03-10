@@ -8,6 +8,13 @@ h1, h2, h3, h4, h5, h6, li,.btn {
   font-family: "Baloo 2", sans-serif;
   font-weight: bold;
 }
+ h1#accueil{
+  font-size: 55px;
+ }
+
+ p.my-4 {
+  font-size: 20px;
+}
 
 .nav-link {
     color: #1F3561;
@@ -15,21 +22,6 @@ h1, h2, h3, h4, h5, h6, li,.btn {
     font-size: 20px;
 }
 
-.card#patient {
-    height: 400px;
-    background-image: url('./assets/Patient.png');
-    background-size: cover;
-    background-position: center; /* Centrer l'image dans la div */
-    background-repeat: no-repeat; /* Empêcher l'image de se répéter */
-}
-
-.card#medecin {
-    height: 400px;
-    background-image: url('./assets/medecin.png');
-    background-size: cover;
-    background-position: center; /* Centrer l'image dans la div */
-    background-repeat: no-repeat; /* Empêcher l'image de se répéter */
-}
 
 .card{
     background-color: #ebf8ff;
@@ -42,9 +34,7 @@ h2.card-title#medecin-patient {
     margin-top: 30%;
 }
 
-img#assets-okdoct2 {
-    margin-top: 65px;
-}
+
 
 section#patient-medecin {
     padding-top: 8% !important;
@@ -66,8 +56,6 @@ section#patient-medecin {
 .social-icons img {
     margin: 0 5px;
 }
-
-
 
   #footer-container {
     padding: 40px 0;
@@ -137,13 +125,11 @@ span#titre-h1{
 }
 
 section.header {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
-.contact-form {
-  padding: 40px;
-}
+
 .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
@@ -167,7 +153,8 @@ section.header {
 
 
 button#contact {
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-left: 15%;
   background-color: #3A57ED !important;
   border-radius: 15px;
   border: none !important;
@@ -209,6 +196,8 @@ div#contact {
 
 h3#inscriptionModalLabel {
   padding-top: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 button#form-send, button#form-pre{
@@ -274,4 +263,146 @@ button.btn.btn-outline-dark.fw-bold{
   color: #1F3561;
   box-shadow: 0 5px 10px rgb(168, 168, 168);
 
+}
+
+
+.background-h1 {
+  padding-top: 50px;
+  background-image: url('./assets/background/assets-6.png');
+  background-position: right top; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  width: 95%;
+}
+
+section.background-header{
+  background-image: url('./assets/background/assets-2.png');
+  background-position: left; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  height: 100%;
+}
+
+section.background-bottom{
+  background-image: url('./assets/background/assets-1.png');
+  background-position: left bottom; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+}
+
+a#navbarDropdown {
+  padding-right: 100px;
+}
+
+h2#background-h2 {
+  padding-top: 50px;
+  background-image: url('./assets/background/assets-5.png');
+  background-position: 30%; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  width: 95%;
+}
+
+img#background-carr{
+  padding-top: 50px;
+  background-image: url('./assets/background/assets-5.png');
+  background-position: 30%; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  width: 95%
+}
+
+img#assets-okdoct2 {
+  background-image: url('./assets/background/assets-4.png');
+  background-position: top left; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  width: 95%;
+  padding-top: 85px;
+  padding-left: 20px;
+}
+
+#bck-bottom{
+  background-image: url('./assets/background/assets-4.png');
+  background-position: bottom right; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; 
+  width: 95%;
+  padding:0px 70px 0px 0px;
+  margin-bottom: 150px;
+}
+
+section.section-bck-top{
+  background-image: url('./assets/background/Mode_Isolation.png');
+  background-position: top left; /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div#contact {
+  background-image: url('./assets/background/assets-4.png');
+  background-position: bottom right; /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
+
+}
+
+.form-group {
+  width: 70%;
+  margin: auto;
+}
+
+
+.card#patient {
+  height: 400px;
+  background-image: url('./assets/Patient.png');
+  background-size: cover;
+  background-position: center; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+  opacity: 0;
+}
+
+.card#medecin {
+  height: 400px;
+  background-image: url('./assets/medecin.png');
+  background-size: cover;
+  background-position: center; /* Centrer l'image dans la div */
+  background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+  opacity: 0;
+}
+
+@keyframes patient {
+  from { margin-left: 60%; opacity: 0; }
+  to { margin-left: 0; opacity: 1; }
+}
+
+/* Animation medecin */
+@keyframes medecin {
+  from { margin-right: 60%; opacity: 0; }
+  to { margin-right: 0; opacity: 1; }
+}
+
+/* Classes pour déclencher l'animation */
+.animate-patient {
+  animation: patient 2s forwards;
+}
+
+.animate-medecin {
+  animation: medecin 2s forwards;
+}
+
+
+#anim-1, #anim-2, #anim-3 {
+  opacity: 0;
+}
+
+@keyframes animationVersDroite {
+  from { margin-left: 50%; opacity: 0; }
+  to { margin-left: 0; opacity: 1; }
+}
+
+@keyframes animationVersGauche {
+  from { margin-right: 50%; opacity: 0; }
+  to { margin-right: 0; opacity: 1; }
+}
+
+/* Classes pour déclencher les animations */
+.animate-vers-droite {
+  animation: animationVersDroite 2s forwards;
+}
+
+.animate-vers-gauche {
+  animation: animationVersGauche 2s forwards;
 }
