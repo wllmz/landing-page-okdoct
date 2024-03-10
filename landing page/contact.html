@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <section class= "background-header">
   <section class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -45,6 +46,7 @@
         </div>
     </nav>
 </section>
+</section>
 
 
   
@@ -52,6 +54,7 @@
 
 
   <!-- Section une -->
+  <section class = "section-bck-top">
   <section class="py-5">
     <div class="container">
       <div class="row align-items-center">
@@ -60,15 +63,15 @@
             <p class="my-4">Vous avez une question ou un besoin d’assistance ? Contactez-nous par mail, téléphone, ou via ce formulaire de contact.</p>
           </div>
         <div class="col-lg-6">
-          <form class="contact-form">
+          <form action="https://formspree.io/f/myyrpprr" method="POST" id="contact">
             <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Nom">
+              <input type="text" class="form-control" name="nom" id="name" placeholder="Nom">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Mail">
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-block" id="contact">Envoyer</button>
           </form>
@@ -76,8 +79,7 @@
       </div>
     </div>
   </section>
-
-
+</section>
 
 
 
@@ -92,7 +94,7 @@
             <div class="card-body d-flex flex-column footer-card-body">
               <h5 class="card-title footer-card-title">Aide</h5>
               <p class="card-text">Assistance</p>
-              <p class="card-text">Nous contacter</p>
+              <a href="./contact.html"><p class="card-text">Nous contacter</p> </a> 
               <p class="card-text"></p>
               <p class="card-text"></p>
             </div>
@@ -154,28 +156,27 @@
 </div>
 
 
- <!-- Modal Patient -->
- <div class="modal fade" id="patientform" tabindex="-1" aria-labelledby="patientformLabel" aria-hidden="true">
+<!-- Modal Patient -->
+<div class="modal fade" id="patientform" tabindex="-1" aria-labelledby="patientformLabel" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="patientformLabel">Formulaire Patient</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
           </div>
           <div class="modal-body">
               <!-- Contenu du formulaire patient ici -->
-              <form class="contact-form">
+              <form action="https://formspree.io/f/mleqllqy" method="POST">            
                 <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Nom">
+                  <input type="text" class="form-control" name="nom" id="name" placeholder="Nom">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                  <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prénom">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Mail">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="ville" placeholder="Ville d'habitation">
+                  <input type="text" class="form-control" name="ville" id="ville" placeholder="Ville d'habitation">
                 </div>
                 <button type="button" class="btn btn-primary btn-block" id="form-pre" onclick="goBackToInscriptionModal('patientform')">Précedent</button>
                 <button type="submit" class="btn btn-primary btn-block" id="form-send">Envoyer</button>
@@ -190,23 +191,22 @@
   <div class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="medecinformLabel">Formulaire Médecin</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
           </div>
           <div class="modal-body">
               <!-- Contenu du formulaire médecin ici -->
-              <form class="contact-form">
+              <form action="https://formspree.io/f/mqkrllro" method="POST">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Nom">
+                  <input type="text" class="form-control" name="nom" id="name" placeholder="Nom">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                  <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prénom">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Mail">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="ville" placeholder="Ville d'habitation">
+                  <input type="text" class="form-control" name="ville" id="ville" placeholder="Ville d'habitation">
                 </div>
       
                 <button type="button" class="btn btn-primary btn-block" id="form-pre" onclick="goBackToInscriptionModal('medecinform')">Précedent</button>
@@ -217,7 +217,6 @@
       </div>
   </div>
 </div>
-
     <!-- Bootstrap 5 JS bundle -->
 
     <script>
