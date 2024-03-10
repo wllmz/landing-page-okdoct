@@ -168,6 +168,9 @@ section.header {
 
 button#contact {
   margin-top: 15%;
+  background-color: #3A57ED !important;
+  border-radius: 15px;
+  border: none !important;
 }
 
 div#contact {
@@ -250,4 +253,25 @@ a#en-savoir {
   border: none;
   color: #1F3561;
   box-shadow: 0 5px 10px rgb(168, 168, 168);
+}
+
+ul.dropdown-menu.show {
+  background-color: #ebf8ff;
+  text-align: center;
+  border: none;
+  box-shadow: 0 5px 10px rgb(168, 168, 168);
+  padding: 5px;
+  width: 10px;
+}
+
+a.dropdown-item {
+  border-top: 1px solid #cecece;
+}
+
+button.btn.btn-outline-dark.fw-bold{
+  background-color: #00DEDD;
+  border: none;
+  color: #1F3561;
+  box-shadow: 0 5px 10px rgb(168, 168, 168);
+
 }
