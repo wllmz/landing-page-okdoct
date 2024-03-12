@@ -1,123 +1,141 @@
-body{
-    background-color: #EBF8FF;
-    color: #1F3561;
-    font-weight: 400;
-    font-family: 'Utendo', sans-serif;
+body {
+  background-color: #EBF8FF;
+  color: #1F3561;
+  font-weight: 400;
+  font-family: 'Utendo', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, li,.btn {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+.btn {
   font-family: "Baloo 2", sans-serif;
   font-weight: bold;
 }
- h1#accueil{
-  font-size: 55px;
- }
 
- p.my-4 {
+h1#accueil {
+  font-size: 55px;
+}
+
+p.my-4 {
   font-size: 20px;
 }
 
 .nav-link {
-    color: #1F3561;
-    font-weight: 700;
-    font-size: 20px;
+  color: #1F3561;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 
-.card{
-    background-color: #ebf8ff;
-    border: none;
-    color: white;
-    border-radius: 16px;
+.card {
+  background-color: #ebf8ff;
+  border: none;
+  color: white;
+  border-radius: 16px;
 }
 
 h2.card-title#medecin-patient {
-    margin-top: 30%;
+  margin-top: 30%;
 }
 
 
 
 section#patient-medecin {
-    padding-top: 8% !important;
-    padding-bottom: 5% !important;
+  padding-top: 8% !important;
+  padding-bottom: 5% !important;
 }
 
 .footer-card {
-    background-color: white; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
 }
+
 .footer-container {
-    background-color: #e9ecef;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background-color: #e9ecef;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 .social-icons img {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
-  #footer-container {
-    padding: 40px 0;
-    color: #1F3561;
-  }
-  .footer-card {
-    border: none;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    color: #1F3561;
-  }
-  .footer-card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .footer-card-title {
-    margin-bottom: 15px;
-  }
-  .social-icons {
-    font-size: 24px;
-  }
-  .social-icons i {
-    margin-right: 10px;
-  }
+#footer-container {
+  padding: 40px 0;
+  color: #1F3561;
+}
+
+.footer-card {
+  border: none;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #1F3561;
+}
+
+.footer-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-card-title {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+}
 
 
-  .footer-card .card-text {
-    margin-bottom: 0.5rem;
-  }
+.footer-card .card-text {
+  margin-bottom: 0.5rem;
+}
 
-  .horizontal {
-    padding: 5px;
-    width: 100%;
-    border-top: 0.5px solid #c1c1c1;
-    margin: 5px;
-  }
+.horizontal {
+  padding: 5px;
+  width: 100%;
+  border-top: 0.5px solid #c1c1c1;
+  margin: 5px;
+}
 
 
-  div#footer-container {
-    margin-top: 50px;
-    margin-bottom: 80px;
-    height: 400px;
-    background-image: url('./assets/bck-footer.png');
-    background-size: cover;
-    background-position: center; /* Centrer l'image dans la div */
-    background-repeat: no-repeat; 
+div#footer-container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  height: 400px;
+  background-image: url('./assets/bck-footer.png');
+  background-size: cover;
+  background-position: center;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
 }
 
 
 div#footer-card {
-    margin-top: 100px;
+  margin-top: 100px;
 
 }
+
 h2 {
   font-weight: bold;
   font-size: 24px;
 }
 
-span#titre-h1{
+span#titre-h1 {
   padding: 10px;
   background-color: #1F3561;
   color: white;
@@ -133,15 +151,20 @@ section.header {
 .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
-  box-shadow: none; /* Si vous ne voulez pas d'ombre sur le bouton */
+  box-shadow: none;
+  /* Si vous ne voulez pas d'ombre sur le bouton */
 }
+
 .btn-primary:hover {
   background-color: #0056b3;
   border-color: #004085;
 }
-.form-control::placeholder { /* Change la couleur du placeholder */
+
+.form-control::placeholder {
+  /* Change la couleur du placeholder */
   color: #999999;
 }
+
 .form-control {
   color: #000;
   background-color: #EBF8FF !important;
@@ -168,30 +191,37 @@ div#contact {
   border-radius: 15px;
   padding-bottom: 50px;
 }
+
 .modal-header {
   border-bottom: none;
   position: relative;
 }
+
 .modal-title {
   font-size: 1.5rem;
   margin: 0 auto;
   font-weight: 500;
 }
+
 .btn-close {
   position: absolute;
   right: 15px;
   top: 15px;
 }
+
 .modal-body {
   text-align: center;
 }
+
 .modal-body .btn {
   border-radius: 10px;
   padding: 10px 24px;
   font-size: 1rem;
-  width: 150px; /* Largeur fixe pour les deux boutons */
+  width: 150px;
+  /* Largeur fixe pour les deux boutons */
   height: 100px;
-  margin: 15px 20px; /* Espacement entre les boutons */
+  margin: 15px 20px;
+  /* Espacement entre les boutons */
 }
 
 h3#inscriptionModalLabel {
@@ -200,22 +230,24 @@ h3#inscriptionModalLabel {
   font-weight: bold;
 }
 
-button#form-send, button#form-pre{
+button#form-send,
+button#form-pre {
   padding: 5px;
   height: 40px;
 }
-button#form-send{
- background-color: #3A57ED !important;
- border-color: #3A57ED;
- font-weight: bold;
+
+button#form-send {
+  background-color: #3A57ED !important;
+  border-color: #3A57ED;
+  font-weight: bold;
 }
 
-button#form-pre{
-background-color: white;
-color: #1F3561;
-font-weight: bold;
-border-color: #ededed;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+button#form-pre {
+  background-color: white;
+  color: #1F3561;
+  font-weight: bold;
+  border-color: #ededed;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -223,6 +255,7 @@ button#royal {
   background-color: #3A57ED !important;
   border-radius: 15px;
   border: none !important;
+  margin-bottom: 25px;
 }
 
 .btn {
@@ -257,7 +290,7 @@ a.dropdown-item {
   border-top: 1px solid #cecece;
 }
 
-button.btn.btn-outline-dark.fw-bold{
+button.btn.btn-outline-dark.fw-bold {
   background-color: #00DEDD;
   border: none;
   color: #1F3561;
@@ -269,22 +302,25 @@ button.btn.btn-outline-dark.fw-bold{
 .background-h1 {
   padding-top: 50px;
   background-image: url('./assets/background/assets-6.png');
-  background-position: right top; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: right top;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   width: 95%;
 }
 
-section.background-header{
+section.background-header {
   background-image: url('./assets/background/assets-2.png');
-  background-position: left; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: left;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   height: 100%;
 }
 
-section.background-bottom{
+section.background-bottom {
   background-image: url('./assets/background/assets-1.png');
-  background-position: left bottom; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: left bottom;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
 }
 
 a#navbarDropdown {
@@ -294,46 +330,52 @@ a#navbarDropdown {
 h2#background-h2 {
   padding-top: 50px;
   background-image: url('./assets/background/assets-5.png');
-  background-position: 30%; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: 185px;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   width: 95%;
 }
 
-img#background-carr{
+img#background-carr {
   padding-top: 50px;
   background-image: url('./assets/background/assets-5.png');
-  background-position: 30%; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: 30%;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   width: 95%
 }
 
 img#assets-okdoct2 {
   background-image: url('./assets/background/assets-4.png');
-  background-position: top left; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: top left;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   width: 95%;
   padding-top: 85px;
   padding-left: 20px;
 }
 
-#bck-bottom{
+#bck-bottom {
   background-image: url('./assets/background/assets-4.png');
-  background-position: bottom right; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; 
+  background-position: bottom right;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
   width: 95%;
-  padding:0px 70px 0px 0px;
+  padding: 0px 70px 0px 0px;
   margin-bottom: 150px;
 }
 
-section.section-bck-top{
+section.section-bck-top {
   background-image: url('./assets/background/Mode_Isolation.png');
-  background-position: top left; /* Centrer l'image dans la div */
+  background-position: top left;
+  /* Centrer l'image dans la div */
   background-repeat: no-repeat;
 }
 
 div#contact {
   background-image: url('./assets/background/assets-4.png');
-  background-position: bottom right; /* Centrer l'image dans la div */
+  background-position: bottom right;
+  /* Centrer l'image dans la div */
   background-repeat: no-repeat;
 
 }
@@ -348,8 +390,10 @@ div#contact {
   height: 400px;
   background-image: url('./assets/Patient.png');
   background-size: cover;
-  background-position: center; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+  background-position: center;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
+  /* Empêcher l'image de se répéter */
   opacity: 0;
 }
 
@@ -357,20 +401,36 @@ div#contact {
   height: 400px;
   background-image: url('./assets/medecin.png');
   background-size: cover;
-  background-position: center; /* Centrer l'image dans la div */
-  background-repeat: no-repeat; /* Empêcher l'image de se répéter */
+  background-position: center;
+  /* Centrer l'image dans la div */
+  background-repeat: no-repeat;
+  /* Empêcher l'image de se répéter */
   opacity: 0;
 }
 
 @keyframes patient {
-  from { margin-left: 80%; opacity: 0; }
-  to { margin-left: 0; opacity: 1; }
+  from {
+    margin-left: 80%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
 }
 
 /* Animation medecin */
 @keyframes medecin {
-  from { margin-right: 80%; opacity: 0; }
-  to { margin-right: 0; opacity: 1; }
+  from {
+    margin-right: 80%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
 }
 
 /* Classes pour déclencher l'animation */
@@ -382,7 +442,8 @@ div#contact {
   animation: medecin 2s forwards;
 }
 
-.anim-left, .anim-right {
+.anim-left,
+.anim-right {
   opacity: 0;
   transition: opacity 2s ease-out;
 }
@@ -392,6 +453,7 @@ div#contact {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -403,6 +465,7 @@ div#contact {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -417,3 +480,407 @@ div#contact {
   animation: slideInFromRight 2s forwards;
 }
 
+button.navbar-toggler {
+  background-color: #1F3561;
+  color: white;
+}
+
+/** responsive **/
+
+
+@media only screen and (max-width: 990px) {
+  section.background-header {
+    display: none !important;
+  }
+}
+
+
+
+.menu {
+  position: fixed;
+  width: 0px;
+  left: 0px;
+  padding-top: 8px;
+}
+
+main {
+  /* Pour que le texte ne soit pas sous le menu */
+  margin-left: 50px;
+  width: 500px;
+  text-align: justify;
+}
+
+#hamburger {
+  /* Pour que la checkbox ne s'affiche pas */
+  display: none;
+}
+
+#hamburger-logo {
+  /* Pour que le curseur soit un pointeur */
+  cursor: pointer;
+  background: #1f3561;
+  width: 200px;
+  display: block;
+  color: white;
+  /* Pour que le menu hamburger s'affiche toujours */
+  text-align: right;
+  /* Pour que le menu hamburger soit "rangé" par défaut */
+  transform: translateX(-168px);
+  padding: 10px;
+  border-bottom-right-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+}
+
+nav#mobileburger {
+  display: flex;
+  flex-direction: column;
+  background: #1f3561;
+  overflow: hidden;
+  width: 200px;
+  transform: translateX(-200px);
+  padding: 15px;
+  margin-top: -13px;
+  height: 932px;
+}
+
+#hamburger-logo,
+nav {
+  /* Pour qu'il y ait une animation */
+  transition: 0.7s;
+}
+
+/* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+#hamburger:checked~#hamburger-logo,
+#hamburger:checked~nav {
+  /* Changement de la position pour afficher les menus */
+  transform: translate(0);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+
+@media only screen and (min-width: 990px) {
+  section.mobile.menu {
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  img.logo-mobile {
+    margin-left: 73%;
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img.logo-mobile {
+    margin-left: 73%;
+    width: 30%;
+  }
+}
+
+div#menu-mobile {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  max-width: 950px;
+}
+
+@media only screen and (min-width: 990px) {
+  section.container-menu-mobile {
+    display: none;
+
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  img.mobile-assets-top {
+    padding: 14%;
+    display: none;
+  }
+}
+
+img.mobile-assets-top {
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+  h1#accueil,
+  .background-h1 {
+    padding-top: 60px;
+    font-size: 50px;
+    background-image: none;
+    margin-bottom: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1#accueil,
+  .background-h1 {
+    font-size: 35px;
+    padding-top: 30px;
+    margin: 15px;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .background-h1 {
+    padding-top: 20px;
+    background-image: url('./assets/background/assets-6.png');
+    background-position: right top;
+    /* Centrer l'image dans la div */
+    background-repeat: no-repeat;
+    width: 90%;
+    background-size: 15%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  section#background-bottom,
+  section.background-bottom {
+    text-align: center;
+    padding-top: 0px !important;
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #medecin-section-assets {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  section#patient-medecin {
+    background-color: #1f3561;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #urgenceokdoct {
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div#notre-projet {
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2#background-h2 {
+    background-position: 90%;
+    background-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div#notre-projet {
+    background-image: url('./assets/background/assets-4.png');
+    background-position: 20% 0%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .notre-projet-bck {
+    background-image: url('./assets/background/assets-4.png');
+    background-position: bottom right;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #bck-bottom {
+    display: none;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div#footer-card {
+    background-color: #1f3561;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-card {
+    background-color: rgba(235, 248, 255, 0.2);
+    color: white;
+  }
+
+  div#footer-card {
+    margin-top: 0px;
+  }
+
+  #social-icons {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #social-icons-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section#desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  section#mobile {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1#desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1#responsive {
+    display: none;
+    margin-top: 500px;
+  }
+}
+
+h1#responsive {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+section.section-bck-top {
+  background-image: none !important;
+}}
+
+@media only screen and (max-width: 600px) {
+.mySection{
+  background-image: url('./assets/background/assets-4.png');
+  background-position: top left;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
+  padding: 0px 15px 0px 15px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  h2#resp{
+  font-size: 18px;
+  padding-top: 10px;
+  }
+  p#resp{
+ font-size: 16px;
+  }
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1#contact{
+    margin-top: 80px;
+    text-align: center;
+    }
+    p#contact{
+   font-size: 16px;
+   text-align: center;
+    }
+
+    div#contact{
+      background-image: none;
+      padding-bottom: 0px;
+    }
+    button#contact{
+      display: block;
+      margin: auto;
+    }
+    }
+
+
+
+    /* indicator  */
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .step {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    }
+  
+    .step.active {
+      background-color: #007bff; /* Bootstrap primary color */
+      border-color: #007bff;
+      color: #fff;
+    }
+  
+    .step-connector {
+      flex-grow: 1;
+      height: 4px;
+      background-color: #ccc;
+    }
+    
+     .step-connector-active {
+      flex-grow: 1;
+      height: 4px;
+      background-color: #007bff;
+    }
+  
+    .step-connector.active {
+      background-color: #007bff; /* Bootstrap primary color */
+    }
+
+    .w-100 {
+      width: 100% !important;
+      height: 50px;
+  }
+
+
+  @media only screen and (min-width: 600px) {
+  #okdcot-form-mob{
+display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+h3#inscriptionModalLabel{
+padding-top: 0px;
+}}
