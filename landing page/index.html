@@ -51,21 +51,49 @@
     </section>
   </section>
 
+  <!---- menu responsive ---->
+  <section class="container-menu-mobile">
+<div class="container" id="menu-mobile">
+<section class= "mobile menu">
+  <div class="menu">
+    <!-- Utilisation d'une checkbox -->
+    <input type="checkbox" id="hamburger">
+    <!-- Label de la checkbox -->
+    <label id="hamburger-logo" for="hamburger">☰</label>
+    <!-- Le reste du menu -->
+    <nav id="mobileburger">
+      <a href="./medecin.html">Avantages medecins</a>
+      <a href="./patient.html">Avantages patients</a>
+      <a href="./contact.html">Contact</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#inscriptionModal">S'inscrire</a>
+    </nav>
+  </div>
+</section>
+<a href="index.html"><img class="logo-mobile" src="./assets/logo-okdoct.png" class="img-fluid" alt=""></a>
+</div>
+</section>
+
+<!-- section container mobile -->
+<div class="menu-header">
+<img class="mobile-assets-top" src="./assets/mobile/mobile-assets.png">
+</div>
+
+
 
   <!-- Section un meilleur suivi -->
   <section class="background-bottom">
-    <section class="py-5">
+    <section class="py-5" id="background-bottom">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="background-h1">
               <h1 id="accueil">Agir pour un meilleur suivi !</h1>
             </div>
-            <p class="my-4">L'application qui met en relation des professionnels de santé pour se pencher sur des cas
+            <p class="my-4" id="texte-top">L'application qui met en relation des professionnels de santé pour se pencher sur des cas
               complexes.</p>
             <a href="#notre-projet"> <button class="btn btn-primary" id="royal">En savoir plus</button> </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="medecin-section-assets">
             <img src="./assets/medecin-section.png" class="img-fluid" alt="">
           </div>
         </div>
@@ -109,18 +137,19 @@
         <div class="m-2">
           <!-- Carte pour la première image -->
           <div class="card">
-            <img src="./assets/okdcot-assets-2.png" class="card-img-top" alt="Image médicale" id="assets-okdoct2">
+            <img  id="urgenceokdoct" src="./assets/okdcot-assets-2.png" class="card-img-top" alt="Image médicale" id="assets-okdoct2">
           </div>
         </div>
         <div class="m-2">
           <!-- Carte pour la seconde image -->
           <div class="card">
-            <img src="./assets/okdoct-assets.png" class="card-img-top" alt="Image d'équipe médicale">
+            <img  id="urgenceokdoct" src="./assets/okdoct-assets.png" class="card-img-top" alt="Image d'équipe médicale">
           </div>
         </div>
       </div>
       <!-- Colonne pour le texte -->
       <div class="col-lg-6" id="notre-projet">
+        <div class="notre-projet-bck">
         <h2 id="background-h2">Notre projet</h2>
         <p>Notre application permet au patient un nouveau parcours de soin digitalisé avec un duo de médecins
           généralistes et spécialistes pour le diagnostic d’une pathologie non commune ou plus rare après l'échec d’un
@@ -128,6 +157,7 @@
         <p>La digitalisation du parcours de soin secondaire permettra un meilleur échange des différents documents sur
           le patient et donc de faciliter le suivi du patient sur le long terme et l'échange entre les deux
           professionnels de santé.</p>
+      </div>
       </div>
     </div>
   </div>
@@ -137,12 +167,12 @@
     <div class="row justify-content-end" id="bck-bottom">
       <div class="col-lg-5">
         <div class="card card-custom">
-          <img src="./assets/okdcot-urgence-assets.png" height="80%" class="card-img-top" alt="Image médicale gauche">
+          <img id="urgenceokdoct" src="./assets/okdcot-urgence-assets.png" height="80%" class="card-img-top" alt="Image médicale gauche">
         </div>
       </div>
       <div class="col-lg-5">
         <div class="card card-custom">
-          <img src="./assets/okdoct-medecin-assets.png" height="80%" class="card-img-top" alt="Image médicale droite">
+          <img  id="urgenceokdoct" src="./assets/okdoct-medecin-assets.png" height="80%" class="card-img-top" alt="Image médicale droite">
         </div>
       </div>
     </div>
@@ -168,7 +198,7 @@
         </div>
         <!-- Carte Réseaux sociaux -->
         <div class="col">
-          <div class="card h-100 footer-card ">
+          <div class="card h-100 footer-card" id="social-icons">
             <div class="card-body d-flex flex-column footer-card-body">
               <h5>Réseaux sociaux</h5>
             </div>
@@ -198,6 +228,15 @@
             </div>
           </div>
         </div>
+        <div class="col" id="social-icons-mobile">
+        <div class="card-body d-flex justify-content-between align-items-center w-100">
+          <div class="d-flex w-100 justify-content-between social-icons">
+            <img src="./assets/Facebook.png" alt="Facebook">
+            <img src="./assets/instagram.png" alt="Instagram">
+            <img src="./assets/linkedin.png" alt="LinkedIn">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -210,10 +249,24 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title" id="inscriptionModalLabel">Vous êtes :</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          <div class="w-100 text-center">
+            <img src="./assets/logo-okdoct.png" class="img-fluid mobile-form" alt="Logo Okdoct" id="okdcot-form-mob">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
         </div>
         <div class="modal-body">
+          <h3 class="modal-title text-center" id="inscriptionModalLabel">Vous êtes :</h3>
+        </div>        
+        <div class="modal-body">
+          <div class="container" id="okdcot-form-mob">
+            <div class="step-indicator">
+              <div class="step active">1</div>
+              <div class="step-connector"></div>
+              <div class="step">2</div>
+              <div class="step-connector"></div>
+              <div class="step">3</div>
+            </div>
+          </div>
           <button class="btn btn-outline-secondary" data-bs-toggle="modal"
             data-bs-target="#patientform">Patient</button>
           <button class="btn btn-outline-secondary" data-bs-toggle="modal"
@@ -229,7 +282,23 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          <div class="w-100 text-center">
+            <img src="./assets/logo-okdoct.png" class="img-fluid mobile-form" alt="Logo Okdoct" id="okdcot-form-mob">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+        </div>        
+        <div class="modal-body">
+          <div class="container" id="okdcot-form-mob">
+            <div class="step-indicator">
+              <div class="step active">1</div>
+              <div class="step-connector-active"></div>
+              <div class="step active">2</div>
+              <div class="step-connector"></div>
+              <div class="step">3</div>
+            </div>
+          </div>
         </div>
         <div class="modal-body">
           <!-- Contenu du formulaire patient ici -->
@@ -260,7 +329,23 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          <div class="w-100 text-center">
+            <img src="./assets/logo-okdoct.png" class="img-fluid mobile-form" alt="Logo Okdoct" id="okdcot-form-mob">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+        </div>        
+        <div class="modal-body">
+          <div class="container" id="okdcot-form-mob">
+            <div class="step-indicator">
+              <div class="step active">1</div>
+              <div class="step-connector-active"></div>
+              <div class="step active">2</div>
+              <div class="step-connector"></div>
+              <div class="step">3</div>
+            </div>
+          </div>
         </div>
         <div class="modal-body">
           <!-- Contenu du formulaire médecin ici -->
@@ -275,7 +360,7 @@
               <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Mail">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="ville" id="ville" placeholder="Ville d'habitation">
+              <input type="text" class="form-control" name="profession" id="profession" placeholder="Profession">
             </div>
 
             <button type="button" class="btn btn-primary btn-block" id="form-pre"
