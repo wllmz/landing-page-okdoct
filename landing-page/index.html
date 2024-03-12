@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Bootstrap Navbar Example</title>
+  <title>Okdoct'</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap 5 CSS -->
@@ -404,6 +404,17 @@
     medecin.classList.add('animate-medecin');
   }
 });
+
+window.addEventListener('scroll', function() {
+  console.log("Défilement détecté"); // Pour déboguer
+  var menuMobile = document.getElementById('menu-mobile');
+  if (window.scrollY > 50) {
+    menuMobile.style.backgroundColor = 'white';
+  } else {
+    menuMobile.style.backgroundColor = 'transparent';
+  }
+});
+
 
 
   </script>

@@ -560,6 +560,7 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 10px;
+  border-bottom: 1px solid #5F5F5F;
 }
 
 
@@ -587,7 +588,7 @@ nav a {
 
 div#menu-mobile {
   position: fixed;
-  background-color: white;
+  background-color: transparent;
   z-index: 1;
   max-width: 950px;
 }
@@ -740,6 +741,11 @@ img.mobile-assets-top {
   #social-icons {
     display: none;
   }
+}
+
+#social-icons-mobile {
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 600px) {

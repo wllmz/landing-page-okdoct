@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Bootstrap Navbar Example</title>
+  <title>Okdoct'</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap 5 CSS -->
@@ -145,7 +145,7 @@
       <div class="col-lg-6 anim-right">
         <h2 id="resp">Travailler sur des cas concrets qui vont faire avancer les recherches sur certaines pathologies cardiologiques.</h2>
         <p class="my-4" id="resp">Se pencher sur des cas rares et/ou compliqués et réunir son savoir avec ses confrères afin de tenter de donner un diagnostic à votre patient, mais également apporter du savoir et trouver des solutions pour cette pathologie.</p>
-        <a href="#" class="btn btn-primary" id="en-savoir" data-bs-toggle="modal" data-bs-target="#medecinform">En savoir plus</a>
+        <a href="#" class="btn btn-primary" id="en-savoir" data-bs-toggle="modal" data-bs-target="#medecinform">S'inscrire</a>
       </div>
     </div>
   </div>
@@ -373,6 +373,16 @@
       }
     }
   });
+});
+
+window.addEventListener('scroll', function() {
+  console.log("Défilement détecté"); // Pour déboguer
+  var menuMobile = document.getElementById('menu-mobile');
+  if (window.scrollY > 50) {
+    menuMobile.style.backgroundColor = 'white';
+  } else {
+    menuMobile.style.backgroundColor = 'transparent';
+  }
 });
 
 
