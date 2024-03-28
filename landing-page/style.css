@@ -880,17 +880,7 @@ section.section-bck-top {
   }
 
 
-  @media only screen and (min-width: 600px) {
-  #okdcot-form-mob{
-display: none;
-  }
-}
 
-@media only screen and (min-width: 600px) {
-h3#inscriptionModalLabel{
-padding-top: 0px;
-}
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -900,4 +890,11 @@ nav a {
   padding: 10px;
   border-bottom: 1px solid #5F5F5F;
 }
+}
+
+
+div#okdcot-form-mob {
+  width: 75%;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
